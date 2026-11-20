@@ -686,7 +686,7 @@ Targets only after one month of measured baseline.
 3. Should the client report be sent in English, or translated into German by a native speaker first? (This run produced English only.)
 4. Willingness to maintain anything afterwards, and engagement terms.
 5. Whether to tell the operators about F-01, F-02 and F-03 now, unconditionally, since each is a quick fix that loses enquiries today.
-6. Manual checks automation could not do: a Zefix lookup for the founding date, a signed-in LinkedIn search, Google results for the brand and "softwarefirma winterthur".
+6. Manual checks automation could not do: see the "Manual follow-up checklist" in the appendix (Zefix, signed-in LinkedIn, Google results, accessibility by hand, and others).
 7. Whether and when to send the client report.
 
 ## 13. Appendix
@@ -785,6 +785,57 @@ External: [UID register entry](https://www.uid.admin.ch/Detail.aspx?uid_id=CHE29
 - Lighthouse runs are warm (they followed a cold `curl` pass); CrUX field data not available.
 - Three competitors' Google places (Kallysoft, IOZ, Zühlke) not opened; competitor inner pages not read.
 - The browser tool could only write captures inside this repository (`.playwright-mcp/`, git-ignored); they were moved to the session scratchpad at the end of the run and the folder was deleted. Screenshots are therefore temporary; quoted text and measured values in this report stand on their own.
+
+### Manual follow-up checklist
+
+Checks a person can do by hand to close the gaps above. Use a signed-out browser window unless the item says otherwise. Record the date, the URL and what you saw, then update the finding or hypothesis named in brackets.
+
+#### Search rankings
+
+On [Google](https://www.google.com/), add `&gl=ch&hl=de` to the search URL so results reflect Switzerland. For each search, note whether ketztek appears in the map results or the top ten, and which competitors do.
+
+- `ketztek`, `site:ketztek.com`, `site:ketztek.ch`: is the site indexed, and does `/maintenance-page/` appear (F-09)?
+- `softwarefirma winterthur`, `it beratung winterthur`, `prozessautomatisierung kmu`, `power platform beratung`, `digitalisierung bauunternehmen`, `baustellendokumentation app`: the main demand queries from section 6.
+- Any AI summary Google shows for `ketztek`: a lead only; check each claim against a raw source.
+- [Google Trends](https://trends.google.com/), region Switzerland: compare German and English phrasings (F-04).
+
+#### Company facts
+
+- [Zefix](https://www.zefix.ch/en/search/entity/welcome): founding date, registered purpose, register status (H7). Record roles, never names.
+- [SHAB / SOGC](https://www.shab.ch/): founding publication and later changes.
+- [Moneyhouse](https://www.moneyhouse.ch/): founding date and company size; ignore personal profiles.
+- [nic.ch whois](https://www.nic.ch/whois/): registration date and holder type for `ketztek.ch`.
+
+#### Profiles and listings
+
+- LinkedIn, signed in: company page, followers, newest post, number of staff listing ketztek by role (H5, F-05).
+- Xing, Instagram, Facebook, YouTube: search "ketztek" on each.
+- [Apple Maps](https://maps.apple.com/) and [Bing Maps](https://www.bing.com/maps): does a listing exist, with correct address, phone and website (F-07)?
+- Google listing, signed in: does it offer "Claim this business" or "Own this business?" (F-07)?
+- [Microsoft AppSource](https://appsource.microsoft.com/) partner listings: is ketztek a listed partner, with certifications (F-05)?
+
+#### Accessibility
+
+- [WAVE](https://wave.webaim.org/) on Home, Contact and Expertise (F-15).
+- Keyboard: tab through each page; is focus visible, and can you reach the menu, the booking button and the form?
+- Zoom to 200% and 400%; check reflow and overlap.
+- Turn on the operating system's reduce-motion setting; do the scroll animations stop?
+- A real phone: confirm that the menu button cannot be opened (F-01).
+
+#### Performance and security
+
+- [PageSpeed Insights](https://pagespeed.web.dev/): field data from real visitors, if the site has enough traffic (F-12).
+- [SecurityHeaders.com](https://securityheaders.com/) on `ketztek.com` and [SSL Labs](https://www.ssllabs.com/ssltest/) on `ketztek.com` and `www.ketztek.ch` (F-02, F-14).
+- [Rich Results Test](https://search.google.com/test/rich-results) and [Schema.org validator](https://validator.schema.org/): confirm there is no structured data now; re-run after fixes (F-09).
+
+#### Competitors
+
+- Open the Google places not read: Kallysoft, IOZ, Zühlke (section 5).
+- Read inner pages of Theia Solutions, KMUpower and evolyze: case studies, prices, booking flow.
+
+#### German review
+
+- A native Swiss German speaker reviews the German suggestions in sections 4.2, 4.7 and 8 and the booking page's German text (F-10). Swiss German writes "ss", never "ß".
 
 ### Machine-readable summary
 
