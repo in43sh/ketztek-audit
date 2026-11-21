@@ -504,7 +504,7 @@ For the freelancer:
 
 1. Present this as fixes on the current WordPress site, or as input to a rebuild? The evidence supports fixes.
 2. Add a native German reviewer if German pages are designed.
-3. Confirm on a real phone that the Microsoft Bookings frame renders on Contact; in this run's headless browser it stayed blank (`[UNVERIFIED]`).
+3. Settled 2026-11-21 10:34Z: the Microsoft Bookings frame on Contact renders in a full Chromium browser at 390 px (logo, "Select a service", four services). The blank area in this run's captures came from the headless shell build, not the site.
 
 ## 11. Appendix
 
@@ -544,7 +544,7 @@ Lessons: evolyze and Stellar show that a calm or plain page still puts the offer
 ### Limitations
 
 - Headless Chromium (shell build 149) stands in for real phones; the menu-button finding was confirmed with a real tap in the prior audit only.
-- The Microsoft Bookings frame rendered blank in every capture, although keyboard focus entered it; not judged (`[UNVERIFIED]`).
+- The Microsoft Bookings frame rendered blank in every headless-shell capture. A later check in full Chromium (2026-11-21 10:34Z) showed it renders; its own layout was not judged here.
 - The Cloudflare Turnstile widget sits in shadow DOM; its focus indicator and layout were not judged.
 - Hover, active and disabled states were not checked by hand.
 - The Google profile and booking page were not re-read; cited from the prior audit (2026-11-20).
