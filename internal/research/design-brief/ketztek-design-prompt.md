@@ -68,7 +68,7 @@ Languages: German first, English second, as separate pages. Only English copy ex
 
 Marker is never used for text and never on Desk as a text background (1.5:1). It appears in at most two places per screen: the primary button and the "Next step" field.
 
-**Type.** One family, Archivo, from Google Fonts (variable axes `wdth` 62-125 and `wght` 100-900; load `https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap`, or self-host the WOFF2 files). Headlines: `wdth` 112, `wght` 700, line height 1.1. Body: `wdth` 100, `wght` 400, line height 1.5. Field labels in the report block and form labels: `wdth` 75, `wght` 500, sentence case. Fallback stack: `system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif`.
+**Type.** One family, Archivo, from Google Fonts (variable axes `wdth` 62-125 and `wght` 100-900). Download the WOFF2 files and serve them from the site's own folder with `@font-face`; never link to `fonts.googleapis.com`, which sends every visitor's IP address to Google. If you cannot download the files, use the fallback stack below. Headlines: `wdth` 112, `wght` 700, line height 1.1. Body: `wdth` 100, `wght` 400, line height 1.5. Field labels in the report block and form labels: `wdth` 75, `wght` 500, sentence case. Fallback stack: `system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif`.
 
 Type scale (px), phone / desktop: H1 36 / 52; H2 28 / 36; H3 22 / 26; body 17 / 18; small and labels 15 / 15. Never below 15 px.
 
@@ -190,7 +190,7 @@ Marking used below: plain text in quotes is the business's existing copy, use it
 - Body text 17 px on phones, 18 px on desktop; lines at most 75 characters; one H1 per page, headings in order.
 - The H1 and "Book a free 30-minute call" visible without scrolling at 390 and 1440 px on all three pages.
 - Nothing wider than the viewport at 320, 360, 390, 768, 1024 and 1440 px.
-- Archivo only, WOFF2, `font-display: swap`, weights 400, 500, 600 and 700.
+- Archivo only, self-hosted WOFF2, `font-display: swap`, weights 400, 500, 600 and 700; no request to `fonts.googleapis.com` or `fonts.gstatic.com`.
 - LCP 2.5 s or less and layout shift 0.1 or less on a mid-range phone; every image with fixed width and height.
 - Headings, buttons and labels hold the German drafts without breaking.
 - Texts, case stories and contact details are separate editable blocks; contact details come from one source.
@@ -251,7 +251,7 @@ Marking used below: plain text in quotes is the business's existing copy, use it
 | --- | --- | --- | --- |
 | `assets/logo-wordmark.png` | `https://ketztek.com/wp-content/uploads/2026/07/4.1-no-bg_cropped.png` | PNG, 667 x 185, transparent | Header and footer logo |
 | `assets/logo-icon-270.png` | `https://ketztek.com/wp-content/uploads/2026/07/cropped-6.1-no-bg-270x270.png` | PNG, 270 x 270, transparent | Favicon, touch icon |
-| Font | `https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap` | Google Fonts, variable | All text |
+| Font | Archivo on Google Fonts (download only, `wdth` 62-125, `wght` 100-900) | Variable WOFF2, self-hosted | All text |
 
 ### Copy bank (verbatim)
 
@@ -296,6 +296,6 @@ Marking used below: plain text in quotes is the business's existing copy, use it
 
 Design a new website for ketztek GmbH, a small Winterthur firm that finds where industrial and construction companies lose time to manual processes and fixes them with Microsoft 365, the Power Platform or custom software, sized honestly. Visitors are plant, site and operations managers, often on phones; they must see the offer and a "Book a free 30-minute call" button on the first screen. Pages: Home, the service page "Automation & Digital Workflows", Contact, phone menu, footer; 390 to 1440 px.
 
-Direction "Rapport": the site reads like a well-kept work report. White sheets (`#ffffff`) on a neutral grey page (`#eeeeeb`), Ink `#000000` text, the logo's yellow `#e8c048` only as the primary button fill (with black text) and one "Next step" field. Type: Archivo from Google Fonts, wide and bold for headlines, normal for body (17 px minimum on phones), narrow for labels. Signature: a "Work report" block on the first screen with ruled fields "Process / Today / Next step", the last holding the real booking button. Everything left-aligned, ruled lists instead of cards.
+Direction "Rapport": the site reads like a well-kept work report. White sheets (`#ffffff`) on a neutral grey page (`#eeeeeb`), Ink `#000000` text, the logo's yellow `#e8c048` only as the primary button fill (with black text) and one "Next step" field. Type: Archivo (self-hosted WOFF2 from Google Fonts), wide and bold for headlines, normal for body (17 px minimum on phones), narrow for labels. Signature: a "Work report" block on the first screen with ruled fields "Process / Today / Next step", the last holding the real booking button. Everything left-aligned, ruled lists instead of cards.
 
 Do not: use stock photos, gradients, mock-ups or cards with shadows; add blue, teal, green or purple; put anything over the phone menu button; show the logo twice; invent clients, numbers or claims (use `[[supply: ...]]` placeholders).
