@@ -103,8 +103,8 @@ Filler, not to reuse as headlines: "Making your business run smoother.", "Seamle
 
 | Asset | File | Source | Size | Colors (sampled in browser canvas, 8-step rounding) |
 | --- | --- | --- | --- | --- |
-| Wordmark (sampled 12:06Z) | `assets/logo-wordmark.png` | [4.1-no-bg_cropped.png](https://ketztek.com/wp-content/uploads/2026/07/4.1-no-bg_cropped.png) | 667 x 185 PNG, transparent | `#000000` 69.3%, `#e8c048` 30.7% |
-| Icon (double "z", sampled 12:00Z) | `assets/logo-icon-270.png` | [cropped-6.1-no-bg-270x270.png](https://ketztek.com/wp-content/uploads/2026/07/cropped-6.1-no-bg-270x270.png) | 270 x 270 PNG, transparent | `#e8c048` 100% |
+| Wordmark (sampled 12:06Z) | `assets/logo-wordmark.png` | [4.1-no-bg_cropped.png](https://ketztek.com/wp-content/uploads/2026/07/4.1-no-bg_cropped.png) | 667 x 185 PNG, transparent | `#000000` 69.3%, `#ebc34d` 30.7% |
+| Icon (double "z", sampled 12:00Z) | `assets/logo-icon-270.png` | [cropped-6.1-no-bg-270x270.png](https://ketztek.com/wp-content/uploads/2026/07/cropped-6.1-no-bg-270x270.png) | 270 x 270 PNG, transparent | `#ebc34d` 100% |
 
 - [FACT] No vector logo is published (no SVG referenced in the page). `[[supply: SVG or PDF logo]]`.
 - [FACT] Current fonts Inter and Instrument Sans, current sand `#ebe6d8` and an off-brand purple `#9b51e0`: reference only, not constraints (design audit).
@@ -223,7 +223,7 @@ Font sources checked on 2026-11-21 (HTTP 200 from `fonts.googleapis.com/css2`): 
   | Field line | `#6b6b66` | Input borders, form rules |
   | Ruling | `#b9b9b3` | Decorative ruled lines only |
   | Note | `#55554f` | Secondary text |
-  | Marker | `#e8c048` | Logo yellow: primary button fill, the "next step" field |
+  | Marker | `#ebc34d` | Logo yellow: primary button fill, the "next step" field |
   | Error | `#b42318` | Form errors |
 
 - **Type:** Archivo (Google Fonts, variable `wdth` 62-125, `wght` 100-900): headlines at `wdth` 112 `wght` 700, body at `wdth` 100 `wght` 400, field labels at `wdth` 75 `wght` 500 in sentence case. Fallback `system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif`. One family, varied by width.
@@ -258,7 +258,7 @@ Font sources checked on 2026-11-21 (HTTP 200 from `fonts.googleapis.com/css2`): 
 
 - **Idea:** documentary: real people at real machines and on real sites, framed by the logo's yellow and black.
 - **Roots:** vocabulary 13, 17, 18, 20, 21, 24.
-- **Palette:** Black `#000000`; Yellow `#e8c048`; Concrete `#dcdad4`; White `#ffffff`; Steel `#3a3a37` (secondary text); Error `#b42318`.
+- **Palette:** Black `#000000`; Yellow `#ebc34d`; Concrete `#dcdad4`; White `#ffffff`; Steel `#3a3a37` (secondary text); Error `#b42318`.
 - **Type:** Barlow Condensed 700 for headlines, Barlow 400 and 600 for text (Google Fonts). Fallback `"Arial Narrow", Arial, sans-serif`.
 - **Layout:** full-width own photographs with text on concrete panels beside them, never over them; black used in narrow bands only.
 - **Signature:** the double-"z" chevron as a yellow structural marker between sections and before the primary action.
@@ -281,7 +281,7 @@ Font sources checked on 2026-11-21 (HTTP 200 from `fonts.googleapis.com/css2`): 
 
 - **Idea:** one continuous drawn line carries the visitor from paper to a working tool: map, propose, build, teach.
 - **Roots:** vocabulary 7, 8, 12, 15; the method copy.
-- **Palette:** White `#ffffff`; Mist `#f2f3f4`; Graphite `#23272b`; Secondary `#4f555b`; Line `#8d9196`; Node `#e8c048`; Error `#b42318`.
+- **Palette:** White `#ffffff`; Mist `#f2f3f4`; Graphite `#23272b`; Secondary `#4f555b`; Line `#8d9196`; Node `#ebc34d`; Error `#b42318`.
 - **Type:** IBM Plex Sans 400 and 600 (Google Fonts). Fallback `system-ui, Arial, sans-serif`.
 - **Layout:** a single thin line runs down the home page, with yellow nodes at the four method steps; sections hang off the line.
 - **Signature:** the process line itself.
@@ -311,15 +311,15 @@ Font sources checked on 2026-11-21 (HTTP 200 from `fonts.googleapis.com/css2`): 
 | A | Ink on Paper | 21:1 |
 | A | Ink on Desk | 18.06:1 |
 | A | Note on Paper / on Desk | 7.5:1 / 6.46:1 |
-| A | Ink on Marker (primary button) | 12.06:1 |
+| A | Ink on Marker (primary button) | 12.45:1 |
 | A | Field line on Paper (interface) | 5.36:1 |
 | A | Error on Paper | 6.57:1 |
-| A | Marker on Desk | 1.5:1, decoration only, never text |
+| A | Marker on Desk | 1.45:1, decoration only, never text |
 | B | Black on Concrete / Steel on Concrete | 15.02:1 / 8.16:1 |
-| B | Yellow on Black / Black on Yellow | 12.06:1 / 12.06:1 |
+| B | Yellow on Black / Black on Yellow | 12.45:1 / 12.45:1 |
 | C | Graphite on White / on Mist | 15.04:1 / 13.53:1 |
 | C | Secondary on White; Line on White (interface) | 7.55:1; 3.17:1 |
-| C | Graphite on Node yellow | 8.64:1 |
+| C | Graphite on Node yellow | 8.91:1 |
 
 ### Recommendation
 
@@ -329,15 +329,15 @@ Font sources checked on 2026-11-21 (HTTP 200 from `fonts.googleapis.com/css2`): 
 
 To generate an alternative design prompt, replace part 5 of the design prompt with one of these.
 
-**B, "Werkhalle":** Your direction is documentary. The site shows real people at real machines and on real building sites, framed by the logo's yellow and black, because ketztek's promise is that it comes to the factory and the building site. Palette: Black `#000000` (text, narrow bands), Yellow `#e8c048` (primary button fill with black text, 12.06:1, and the chevron marker), Concrete `#dcdad4` (panels; black text 15.02:1), White `#ffffff`, Steel `#3a3a37` (secondary text on concrete, 8.16:1), Error `#b42318`. Type: Barlow Condensed 700 for headlines and Barlow 400/600 for text, self-hosted WOFF2 from Google Fonts, fallback `"Arial Narrow", Arial, sans-serif`. Layout: full-width own photographs with text on concrete panels beside them, never on top; black only in narrow bands. Signature: the logo's double "z" used as a yellow chevron marker between sections and before the primary action, never as a striped band. Imagery: only the business's own photos `[[supply: six to eight landscape photos of the team at clients' machines and sites]]`. Motion: none. Do not drift into: dark full-bleed photo heroes with white text.
+**B, "Werkhalle":** Your direction is documentary. The site shows real people at real machines and on real building sites, framed by the logo's yellow and black, because ketztek's promise is that it comes to the factory and the building site. Palette: Black `#000000` (text, narrow bands), Yellow `#ebc34d` (primary button fill with black text, 12.45:1, and the chevron marker), Concrete `#dcdad4` (panels; black text 15.02:1), White `#ffffff`, Steel `#3a3a37` (secondary text on concrete, 8.16:1), Error `#b42318`. Type: Barlow Condensed 700 for headlines and Barlow 400/600 for text, self-hosted WOFF2 from Google Fonts, fallback `"Arial Narrow", Arial, sans-serif`. Layout: full-width own photographs with text on concrete panels beside them, never on top; black only in narrow bands. Signature: the logo's double "z" used as a yellow chevron marker between sections and before the primary action, never as a striped band. Imagery: only the business's own photos `[[supply: six to eight landscape photos of the team at clients' machines and sites]]`. Motion: none. Do not drift into: dark full-bleed photo heroes with white text.
 
-**C, "Ablauf":** Your direction is a process line. One continuous thin line runs down the home page from paper to a working tool, through four steps the business names: map the process, propose the fix, build it, teach the team. Palette: White `#ffffff`, Mist `#f2f3f4` (alternate sections), Graphite `#23272b` (text, 15.04:1 on white), Secondary `#4f555b` (7.55:1), Line `#8d9196` (the process line, 3.17:1), Node `#e8c048` (step nodes and the primary button with graphite text, 8.64:1), Error `#b42318`. Type: IBM Plex Sans 400/600, self-hosted WOFF2 from Google Fonts, fallback `system-ui, Arial, sans-serif`. Imagery: simple line drawings of a paper form, a spreadsheet and an app screen, no device mock-ups. Motion: the line draws once on first load, off with reduced motion. Do not drift into: SaaS dashboards, floating UI cards, blue gradients.
+**C, "Ablauf":** Your direction is a process line. One continuous thin line runs down the home page from paper to a working tool, through four steps the business names: map the process, propose the fix, build it, teach the team. Palette: White `#ffffff`, Mist `#f2f3f4` (alternate sections), Graphite `#23272b` (text, 15.04:1 on white), Secondary `#4f555b` (7.55:1), Line `#8d9196` (the process line, 3.17:1), Node `#ebc34d` (step nodes and the primary button with graphite text, 8.91:1), Error `#b42318`. Type: IBM Plex Sans 400/600, self-hosted WOFF2 from Google Fonts, fallback `system-ui, Arial, sans-serif`. Imagery: simple line drawings of a paper form, a spreadsheet and an app screen, no device mock-ups. Motion: the line draws once on first load, off with reduced motion. Do not drift into: SaaS dashboards, floating UI cards, blue gradients.
 
 ## 11. Open questions
 
 For the business:
 
-1. Is a vector logo (SVG or PDF) available, and is `#e8c048` the official yellow?
+1. Is a vector logo (SVG or PDF) available, and is `#ebc34d` the official yellow?
 2. Is `construction.jpg` your own photo, and are there photos from client sites, factories or workshops that may be shown?
 3. Which projects may be described (even anonymously), with which results?
 4. Who is on the team, by role, and may they appear with photos?
@@ -360,6 +360,7 @@ For the freelancer:
 
 **Limitations:**
 
+- Logo yellow corrected on 2026-11-21: the first logo sampler reported each channel rounded down to a step of 8 (`#e8c048`). The exact pixel value in both logo files is `#ebc34d`; every contrast figure with the yellow was recomputed.
 - The fingerprint script missed Stellar's gradient-filled button and counted IOZ's case-study cards and evolyze's scroll arrow as buttons; the counts above are corrected from the screenshots (noted for the prompt).
 - Competitor inner pages not read; consent banners not clicked.
 - German drafts are not by a native speaker.

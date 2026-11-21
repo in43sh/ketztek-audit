@@ -11,7 +11,7 @@
 | Prior audit | `internal/research/audit/ketztek-audit-report.md` (2026-11-20). Its design-related findings are cited by ID (F-01, F-03, F-04, F-05, F-06, F-09, F-10, F-12, F-15, F-16) and not re-reported. |
 | Competitors | evolyze (Winterthur), Theia Solutions (Zürich), Stellar Automation (Dübendorf): the closest group-a alternatives in the prior audit. Home pages at 390 and 1440 px. |
 | Method | The prompt's Appendix A extraction (summary mode), Appendix B merge and Appendix C checks, run with the Node runner and a cached headless Chromium; one extra probe for side margins, heading markup and color use. 47 page loads on ketztek.com, 10 s apart (its `Crawl-delay: 10`). |
-| Brand material | None supplied. Logo yellow sampled from the logo file: `#e8c048`. |
+| Brand material | None supplied. Logo yellow sampled from the logo file: `#ebc34d` (corrected on 2026-11-21 from a rounded `#e8c048`; contrast figures recomputed). |
 | Screenshots | Kept in the session scratch folder only ("Keep screenshots": no). Cited by file name. |
 
 Business context, written before measuring:
@@ -79,7 +79,7 @@ Fonts loaded: Inter (variable, TTF) and Instrument Sans (variable, TTF), `font-d
 | Text, near-blacks | `#0f0f0f` 45.3%, `#2c2c2c` 42.8%, `#1c1c1c` 0.3% | Body and links |
 | Headings | `#3a3228` | 9.2% of characters |
 | Purple | `#9b51e0` | 1.5% of characters, 37.5% of borders, 5 icon images |
-| Logo yellow | `#e8c048` (sampled) | Logo only |
+| Logo yellow | `#ebc34d` (sampled) | Logo only |
 
 ### Spacing, shape, components
 
@@ -173,7 +173,7 @@ Index, ranked by effect on the site's job:
 
 ### 3.3 Color and contrast
 
-Computed contrast: 0 failures in 26 readings. Manual checks: 8 text elements over images (the hero tagline over the marble texture; readable in screenshots), 14 whose background came from parent elements only (footer and form labels; screenshots show dark text on white or sand). Pairings for the recommended palette, computed: `#2c2c2c` on `#ebe6d8` 11.2:1; `#1c1c1c` on the logo yellow `#e8c048` 9.79:1; white on the yellow 1.74:1 (fails); the purple `#9b51e0` on sand 3.62:1 (passes only as large text).
+Computed contrast: 0 failures in 26 readings. Manual checks: 8 text elements over images (the hero tagline over the marble texture; readable in screenshots), 14 whose background came from parent elements only (footer and form labels; screenshots show dark text on white or sand). Pairings for the recommended palette, computed: `#2c2c2c` on `#ebe6d8` 11.2:1; `#1c1c1c` on the logo yellow `#ebc34d` 10.1:1; white on the yellow 1.69:1 (fails); the purple `#9b51e0` on sand 3.62:1 (passes only as large text).
 
 #### [D-05] Off-brand WordPress purple competes with the logo
 
@@ -182,7 +182,7 @@ Computed contrast: 0 failures in 26 readings. Manual checks: 8 text elements ove
 - Category: Color
 - Pages and viewports: Home, all widths
 - Affects: a visitor forming a first impression of a careful, coherent firm
-- Evidence: [FACT] `#9b51e0` colors 19 Home elements (Expertise boxes, both sector headings) and 37.5% of borders; five icons are purple images (`*_purp.png`). [INFERENCE] It is WordPress's built-in "vivid purple" preset, a default rather than a brand choice. [FACT] The logo accent is yellow `#e8c048`.
+- Evidence: [FACT] `#9b51e0` colors 19 Home elements (Expertise boxes, both sector headings) and 37.5% of borders; five icons are purple images (`*_purp.png`). [INFERENCE] It is WordPress's built-in "vivid purple" preset, a default rather than a brand choice. [FACT] The logo accent is yellow `#ebc34d`.
 - Why it matters: two unrelated accents dilute the one distinctive asset the brand has.
 - Recommendation: Drop the purple. Use near-black for icons, borders and sector headings, and the logo yellow sparingly as the action accent behind dark text.
 - Effort: S
@@ -450,7 +450,7 @@ Corrected token sheet:
 | Ink | Merge `#0f0f0f`, `#1c1c1c`, `#2c2c2c` | `#1c1c1c` for text and buttons | D-05 |
 | Heading | Keep | `#3a3228` | |
 | Sand, white | Keep | `#ebe6d8`, `#ffffff` | |
-| Accent | Change: drop `#9b51e0` | Logo yellow `#e8c048`, only as a fill behind `#1c1c1c` text (9.79:1) or as a thin underline; never as text on sand (1.4:1) | D-05 |
+| Accent | Change: drop `#9b51e0` | Logo yellow `#ebc34d`, only as a fill behind `#1c1c1c` text (10.1:1) or as a thin underline; never as text on sand (1.35:1) | D-05 |
 | Body size | Change | 16 px phones to 18 px desktop, all templates | D-08 |
 | Heading scale | Change | H4 18, H3 22, H2 28, H1 36 px on phones; H4 20, H3 28, H2 36, H1 48 px on desktop; one weight (600) | D-09 |
 | Content width | Change | 20 px phone margins; text column max about 680 px; left edge aligned with the logo | D-06 |

@@ -63,12 +63,12 @@ Languages: German first, English second, as separate pages. Only English copy ex
 | Field line | `#6b6b66` | Input borders and form rules | 5.36:1 on Paper (interface) |
 | Ruling | `#b9b9b3` | Decorative ruled lines inside the report block only | decoration |
 | Note | `#55554f` | Secondary text | 7.5:1 on Paper, 6.46:1 on Desk |
-| Marker | `#e8c048` | The logo's yellow: primary button fill (Ink text) and the "Next step" field | Ink on Marker 12.06:1 |
+| Marker | `#ebc34d` | The logo's yellow: primary button fill (Ink text) and the "Next step" field | Ink on Marker 12.45:1 |
 | Error | `#b42318` | Form error text and borders | 6.57:1 on Paper |
 
-Marker is never used for text and never on Desk as a text background (1.5:1). It appears in at most two places per screen: the primary button and the "Next step" field.
+Marker is never used for text and never on Desk as a text background (1.45:1). It appears in at most two places per screen: the primary button and the "Next step" field.
 
-**Type.** One family, Archivo, from Google Fonts (variable axes `wdth` 62-125 and `wght` 100-900). Download the WOFF2 files and serve them from the site's own folder with `@font-face`; never link to `fonts.googleapis.com`, which sends every visitor's IP address to Google. If you cannot download the files, use the fallback stack below. Headlines: `wdth` 112, `wght` 700, line height 1.1. Body: `wdth` 100, `wght` 400, line height 1.5. Field labels in the report block and form labels: `wdth` 75, `wght` 500, sentence case. Fallback stack: `system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif`.
+**Type.** One family, Archivo (variable axes `wdth` 62-125 and `wght` 100-900), from the Fontsource package `@fontsource-variable/archivo`: use its `wdth.css`, which covers both axes, and serve the WOFF2 files from the site's own folder; never link to `fonts.googleapis.com`, which sends every visitor's IP address to Google. If you cannot download the files, use the fallback stack below. Headlines: `wdth` 112, `wght` 700, line height 1.1. Body: `wdth` 100, `wght` 400, line height 1.5. Field labels in the report block and form labels: `wdth` 75, `wght` 500, sentence case. Fallback stack: `system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif`.
 
 Type scale (px), phone / desktop: H1 36 / 52; H2 28 / 36; H3 22 / 26; body 17 / 18; small and labels 15 / 15. Never below 15 px.
 
@@ -125,7 +125,7 @@ First screen at 390 px and 1440 px:
 
 - Wordmark: `assets/logo-wordmark.png` (667 x 185 px, transparent PNG; black wordmark with the yellow double "z"). Header height 32 px on phones, 36 px on desktop. Keep clear space equal to the height of the "z" on all sides. `[[supply: SVG or PDF of the logo; replace the PNG when it arrives]]`
 - Icon: `assets/logo-icon-270.png` (270 x 270 px, the yellow double "z" alone). Use for the favicon and touch icon only.
-- Logo colors: black `#000000`, yellow `#e8c048` (sampled from the files; `[[supply: confirm the official yellow]]`).
+- Logo colors: black `#000000`, yellow `#ebc34d` (sampled from the files; `[[supply: confirm the official yellow]]`).
 - Show the logo once per screen. Never repeat it large in the hero.
 - Required in the footer: Impressum and Privacy pages.
 
@@ -174,7 +174,7 @@ Marking used below: plain text in quotes is the business's existing copy, use it
 
 - **Phone menu.** Full-screen Paper sheet: 22 px links in 56 px rows, current page in bold with a 4 px Marker bar, the language switch, the primary button at the bottom. Open and close buttons 44 x 44 px, nothing on top of them; Escape closes it; focus moves into it.
 - **Desktop navigation.** Current page: Ink text with a 2 px Ink underline. Hover: 2 px underline. Focus: 2 px Ink outline, 2 px offset.
-- **Primary button.** Marker fill, Ink text, Archivo 600, 17 px, 48 px tall, 4 px radius, no shadow. Hover: Ink fill, Marker text (12.06:1). Focus: 2 px Ink outline, 2 px offset. Disabled: Desk fill, Note text.
+- **Primary button.** Marker fill, Ink text, Archivo 600, 17 px, 48 px tall, 4 px radius, no shadow. Hover: Ink fill, Marker text (12.45:1). Focus: 2 px Ink outline, 2 px offset. Disabled: Desk fill, Note text.
 - **Secondary action.** A text link with a 1 px underline (2 px on hover), never a second filled button next to the primary.
 - **Links in text.** Ink, underlined.
 - **Ruled list.** Rows with a 1 px Ruling line above and 16 px padding; the label left of the text on desktop, above it on phones.
@@ -251,7 +251,7 @@ Marking used below: plain text in quotes is the business's existing copy, use it
 | --- | --- | --- | --- |
 | `assets/logo-wordmark.png` | `https://ketztek.com/wp-content/uploads/2026/07/4.1-no-bg_cropped.png` | PNG, 667 x 185, transparent | Header and footer logo |
 | `assets/logo-icon-270.png` | `https://ketztek.com/wp-content/uploads/2026/07/cropped-6.1-no-bg-270x270.png` | PNG, 270 x 270, transparent | Favicon, touch icon |
-| Font | Archivo on Google Fonts (download only, `wdth` 62-125, `wght` 100-900) | Variable WOFF2, self-hosted | All text |
+| Font | npm package `@fontsource-variable/archivo` (`wdth.css`: `wght` 100-900, width 62-125%, OFL) | Variable WOFF2, self-hosted | All text |
 
 ### Copy bank (verbatim)
 
@@ -296,6 +296,6 @@ Marking used below: plain text in quotes is the business's existing copy, use it
 
 Design a new website for ketztek GmbH, a small Winterthur firm that finds where industrial and construction companies lose time to manual processes and fixes them with Microsoft 365, the Power Platform or custom software, sized honestly. Visitors are plant, site and operations managers, often on phones; they must see the offer and a "Book a free 30-minute call" button on the first screen. Pages: Home, the service page "Automation & Digital Workflows", Contact, phone menu, footer; 390 to 1440 px.
 
-Direction "Rapport": the site reads like a well-kept work report. White sheets (`#ffffff`) on a neutral grey page (`#eeeeeb`), Ink `#000000` text, the logo's yellow `#e8c048` only as the primary button fill (with black text) and one "Next step" field. Type: Archivo (self-hosted WOFF2 from Google Fonts), wide and bold for headlines, normal for body (17 px minimum on phones), narrow for labels. Signature: a "Work report" block on the first screen with ruled fields "Process / Today / Next step", the last holding the real booking button. Everything left-aligned, ruled lists instead of cards.
+Direction "Rapport": the site reads like a well-kept work report. White sheets (`#ffffff`) on a neutral grey page (`#eeeeeb`), Ink `#000000` text, the logo's yellow `#ebc34d` only as the primary button fill (with black text) and one "Next step" field. Type: Archivo (self-hosted WOFF2 from `@fontsource-variable/archivo`), wide and bold for headlines, normal for body (17 px minimum on phones), narrow for labels. Signature: a "Work report" block on the first screen with ruled fields "Process / Today / Next step", the last holding the real booking button. Everything left-aligned, ruled lists instead of cards.
 
 Do not: use stock photos, gradients, mock-ups or cards with shadows; add blue, teal, green or purple; put anything over the phone menu button; show the logo twice; invent clients, numbers or claims (use `[[supply: ...]]` placeholders).
