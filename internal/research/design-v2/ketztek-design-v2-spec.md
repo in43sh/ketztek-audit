@@ -200,3 +200,27 @@ Phone menu, 404 page, Impressum, Privacy: as in the brief.
 ## 4. Checkpoint 1 scope
 
 Built on branch `design/option-e` in `ketztek-demo`: the token sheet (section 3.1), the header with the proposed logo, the Home first screen (section 1.1 wireframe) and its title block, the primary button and secondary action states. The draft marker for the logo is shown once and disappears under `?clean`. Screenshots at 390 by 844 and 1440 by 900 are in the session scratchpad, not in the repositories.
+
+## 5. Status (2026-11-22)
+
+Built and pushed:
+
+- Drawing sheet: branch `design/option-e` in `ketztek-demo`, last commit `ecb0e01`. Home, Automation, Contact (form and error state), phone menu and 404 checked at 390 and 1440 px in the clean view.
+- Measured: branch `design/option-e-measured`, last commit `0c896a9`. Chosen after the drawing sheet was judged too close to Rapport. Home only.
+- Demo `main`: one site with three options. The root is a chooser, Rapport is in `rapport/`, and the other two are in `drawing-sheet/` and `measured/` (commit `d908199`). Live at <https://ketztek-demo.vercel.app>. The README has the details.
+- Audit `main`: the research, this spec and the Stitch prompt are merged (commit `cd0ac84`). The current Stitch prompt is `ketztek-stitch-prompt.md` in this folder.
+
+Not done:
+
+- The section 8 checks have not run on any option: contrast on every pair, tap targets, focus order, reduced motion, and the sideways-scroll sweep.
+- No diagram-led reference was verified for the reference board (section 5.3 of the research file).
+- Best of Swiss Web gave one B2B winner; the brief asks for five.
+- The drawing sheet's accessibility (5) and finished-without-photos (4) scores are predictions, not measurements.
+- Only Home was reviewed for the measured option. The service pages, About, Impressum, Privacy and German Home were not reviewed for any option.
+- The German copy is a draft, and only the headline and button have German text.
+- Nothing has been shared with ketztek.
+
+Deployment:
+
+- Vercel SSO protection has been off for the `ketztek-demo` project since 2026-11-22, so previews and production are public. Git fork protection is still on.
+- Preview deployments of `design/option-e` were made before later changes and are out of date. Redeploy from a branch to refresh one.
