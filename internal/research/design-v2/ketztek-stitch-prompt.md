@@ -35,12 +35,18 @@ CONTENT (use verbatim, in this order)
 5. Why work with us, six reasons: "We size the solution to the problem" ("Sometimes the honest answer is two weeks of work, and we'll tell you that."); "We work alongside you, not for you"; "A small team with a deep bench"; "Analysis and delivery from one team"; "You keep what we build"; "Swiss-based, on site when it matters" ("Process work can't be done over video calls alone. We come to the factory and to the building site.")
 6. Closing: "Not sure where to start?" ("Most of our projects begin with one frustrating process. Tell us about yours. In half an hour, we'll give you an honest opinion on whether it's worth fixing and roughly what it would take, before any invoice exists."), the button "Book a free 30-minute call", and the text link "Send a message".
 
+HEADER, MENU AND FOOTER
+- Header: the logo placeholder on the left; links Services, Sectors, About, Contact; the language switch "DE | EN"; the button "Book a call". On phones: the logo and a menu button of at least 44 x 44 px with nothing on top of it. The menu opens full-screen with the same links, the language switch and the primary button.
+- Footer: ketztek GmbH, Schulergasse 9, 8406 Winterthur, Switzerland; info@ketztek.ch; links to "Book a call", "Contact", "Impressum" and "Privacy"; the language switch.
+
 VISUAL RULES
 - No photographs, stock images, device mock-ups, dashboards or floating cards.
 - Where the work needs a picture, use drawings, process diagrams or document layouts. Do not draw people or machines.
 - Left-aligned text throughout, except the closing block.
 - One or two typefaces, licensed for self-hosting. Do not use Inter, Manrope or Montserrat.
 - No cookie banner.
+- Avoid generated-design tells: all-caps labels, middle-dot strings, numbers on items that are not a sequence, identical shadowed cards, and fade-ins on every section.
+- German copy will replace the English later and runs about 30 percent longer. Leave room for it in headings, buttons and the menu.
 - Tone is plain, concrete and a little dry. Never salesy. Avoid "seamless", "innovative", "cutting-edge" and "digital transformation".
 
 ACCESSIBILITY
@@ -59,3 +65,5 @@ FOR EACH DIRECTION, STATE
 - Forbids invented facts: no numbers, names, quotes, founding year or team photos.
 - States the contrast ratios explicitly.
 - Asks each direction to report its system, so the outputs can be compared.
+- Adds the header, the phone menu and the footer, which the brief requires and the first version left out.
+- Adds the German length allowance and the list of generated-design tells from the research.
