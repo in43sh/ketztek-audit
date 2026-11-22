@@ -28,7 +28,7 @@ Checks from section 13 of `ketztek-design-prompt.md` (this folder), run on 2026-
 | 12 | Only the section 5 palette | Pass | Computed text, background and border colours of every visible element, compared with the eight palette values. |
 | 13 | No stock photo, mock-up, gradient or shadowed card | Pass | No `box-shadow`, no gradient backgrounds, and no images other than the logo. |
 | 14 | Work-report block once per page, one interactive element | Pass | At most one report block per page; each holds exactly one link or button. |
-| 15 | German drafts do not break a heading or button | Pass, with a note | Nothing is clipped and nothing scrolls sideways at 390 or 1440 px. The German button label wraps to two lines (58 px tall). At 390 x 844 the German button ends at 859 px, 15 px below the first screen, with the notes visible. In the clean view it ends at 828 px, inside the screen with 16 px to spare. |
+| 15 | German drafts do not break a heading or button | Pass | Nothing is clipped and nothing scrolls sideways at 390 or 1440 px. The German button label wraps to two lines (58 px tall). With the original German H1 (102 characters, seven lines) the button ended at 828 px of 844 in the clean view. With the shortened H1 (91 characters, six lines) it ends at 789 px. With the notes visible it ends at 859 px, because the "native review" note takes its own line; the prompt now says to judge first-screen checks with notes hidden. |
 | 16 | Nothing animates under reduced motion | Pass | One animation (the Next-step bar) runs normally; with `prefers-reduced-motion: reduce` none run. |
 | 17 | Every draft and supply marker visible or listed here | Pass | All 23 draft markers have a dashed note on their page. Three supply items have no place on a page and are listed below. |
 
@@ -42,10 +42,10 @@ Checks from section 13 of `ketztek-design-prompt.md` (this folder), run on 2026-
 
 The first form test failed: after correcting an email error, a click on Send message did nothing. On mousedown the field lost focus, its error message disappeared, the button moved up and the click landed on empty space. Errors now clear while the visitor types (`ketztek-demo/js/site.js`), and the test passes.
 
-## Deviations from the prompt
+## Deviations from the prompt (since fixed in the prompt)
 
 - **Primary button hover:** the prompt asks for Ink fill with Marker text. That breaks the prompt's own rule that Marker is never a text colour, and check 7. The prototype uses Ink fill with Paper text.
 - **Next-step row:** the prompt asks for a Marker band behind the button area, but the button is Marker too, so it would be yellow on yellow. The prototype marks the row with a 4 px Marker bar on its left edge.
 - **Booking link:** the prompt leaves the Microsoft Bookings link as a supply item. The prototype uses the current public booking page from the research file, so that no booking button is dead.
 - **Column width:** the prompt says 680 px is about 70 characters. In Archivo at 18 px, 680 px measured 77 to 78 characters, which fails check 6, so the column is 620 px.
-- **German first screen:** the German H1 draft is 102 characters, against 81 in English, and runs to seven lines at 36 px. It fits in the clean view with only 16 px to spare (see check 15).
+- **German first screen:** the prompt's German H1 draft was 102 characters, against 81 in English, and ran to seven lines at 36 px, leaving 16 px on the first phone screen. The prompt now has a 91-character draft ("…mit Ihren eigenen Werkzeugen."), which takes six lines; the prototype uses it.

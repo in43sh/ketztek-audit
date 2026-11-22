@@ -69,7 +69,7 @@ ketztek is a young Winterthur GmbH that analyses, automates and builds software 
 
 **Journeys:**
 
-1. **Phone, from search:** lands on Home, reads the headline and the work-report block, taps "Book a free 30-minute call", picks the free consultation in Microsoft Bookings.
+1. **Phone, from search:** lands on Home, reads the headline and the work-report block, taps "Book a free 30-minute call", picks the free consultation in Microsoft Bookings ([public booking page](https://bookings.cloud.microsoft/book/ketztek1@ketztek.ch/), read 10:34; four services, from the presence audit).
 2. **Desk, comparing:** reads services and sectors, opens the service page, checks proof and "Why us", books or writes.
 3. **Prefers to write:** opens Contact, sends name, email and a short message, expects a reply time.
 
@@ -223,11 +223,11 @@ Font sources checked on 2026-11-21 (HTTP 200 from `fonts.googleapis.com/css2`): 
   | Field line | `#6b6b66` | Input borders, form rules |
   | Ruling | `#b9b9b3` | Decorative ruled lines only |
   | Note | `#55554f` | Secondary text |
-  | Marker | `#ebc34d` | Logo yellow: primary button fill, the "next step" field |
+  | Marker | `#ebc34d` | Logo yellow: primary button fill, the "next step" bar |
   | Error | `#b42318` | Form errors |
 
 - **Type:** Archivo (Google Fonts, variable `wdth` 62-125, `wght` 100-900): headlines at `wdth` 112 `wght` 700, body at `wdth` 100 `wght` 400, field labels at `wdth` 75 `wght` 500 in sentence case. Fallback `system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif`. One family, varied by width.
-- **Layout:** one left-aligned text column (max 680 px) beside or above white "sheets" set on the desk color; ruled fields inside sheets; generous space between sheets. 12-column grid on desktop, one column on phones.
+- **Layout:** one left-aligned text column (max 620 px, about 70 characters) beside or above white "sheets" set on the desk color; ruled fields inside sheets; generous space between sheets. 12-column grid on desktop, one column on phones.
 - **Signature:** the work-report block on the first screen: three ruled fields (Process, Today, Next step) filled with a real problem from the copy, and the "Next step" field holding the actual primary button in marker yellow.
 - **Imagery:** none required to launch; own photos later as "attachments" pinned to sheets.
 - **Motion:** none, or one marker fill under "Next step" on first load (off with reduced motion).
@@ -294,7 +294,7 @@ Font sources checked on 2026-11-21 (HTTP 200 from `fonts.googleapis.com/css2`): 
 | --- | --- | --- |
 | A | First draft used an ALL-CAPS "RAPPORT" label (template chrome) | Sentence-case "Work report" label |
 | A | First draft set field labels in a monospace face (generic default) | Archivo at narrow width instead |
-| A | First draft highlighted one headline word in marker yellow (single-word accent) | Marker only on the primary button and the "Next step" field |
+| A | First draft highlighted one headline word in marker yellow (single-word accent) | Marker only on the primary button and the "Next step" bar |
 | A | Ruled lines and square sheets risk the newspaper look | One text column, generous spacing between sheets, 2 px radius on sheets; rules only inside the report block and forms |
 | A | Desk background close to the warm-cream default | Neutral `#eeeeeb` (no warm cast), sans-serif type, no terracotta |
 | A | The block could read as a form to fill in (false affordance) | Printed text on rules, no input boxes; the only interactive element in it is the real button |
@@ -364,5 +364,6 @@ For the freelancer:
 - The fingerprint script missed Stellar's gradient-filled button and counted IOZ's case-study cards and evolyze's scroll arrow as buttons; the counts above are corrected from the screenshots (noted for the prompt).
 - Competitor inner pages not read; consent banners not clicked.
 - German drafts are not by a native speaker.
+- Prototype test on 2026-11-21: a coding agent built the design prompt as a static site (`ketztek-demo`) and found five gaps, now fixed in the design prompt: the button hover used yellow text, a yellow band sat behind the yellow button, the booking link was only a placeholder, the 680 px column held 77 to 78 characters, and the German H1 (102 characters, seven lines at 36 px) left 16 px on the first phone screen. It is now 91 characters and six lines. See `ketztek-prototype-checks.md`.
 - Prior-report facts older than today (UID, reviews, analytics) were not re-checked; none changes the design direction.
 - Crawl delay: the logo downloads (12:00:37, 12:00:47) and the icon sample (12:00:59) ran while the ketztek fingerprint (12:00:41-12:01:05) was loading the same host, so a few requests came less than the 10 s `robots.txt` delay apart. The wordmark was re-sampled later with the delay kept.

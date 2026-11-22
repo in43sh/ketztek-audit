@@ -12,7 +12,7 @@ You are designing a completely new website for ketztek GmbH, a small Winterthur 
 - Services: Process Analysis & Optimization; Automation & Digital Workflows (Microsoft 365, Power Platform); Custom Software Engineering; Prototyping & Feasibility (including AR/VR pilots); Workshops & Training.
 - Technologies: software engineering, AI, cloud (Microsoft Azure), Microsoft 365, Microsoft Power Platform, augmented and virtual reality.
 - Way of working: sizes the solution to the problem, works alongside the client's people and teaches them, a small core team with a network of specialists, analysis and delivery by the same people, the client keeps documented code.
-- First step for a client: a free 30-minute call, booked through Microsoft Bookings, or a written message.
+- First step for a client: a free 30-minute call, booked through Microsoft Bookings (public booking page: `https://bookings.cloud.microsoft/book/ketztek1@ketztek.ch/`), or a written message.
 - The firm is young and has no published reviews, case studies or certifications yet. Do not imply any.
 
 ## 3. Who the site is for
@@ -63,10 +63,10 @@ Languages: German first, English second, as separate pages. Only English copy ex
 | Field line | `#6b6b66` | Input borders and form rules | 5.36:1 on Paper (interface) |
 | Ruling | `#b9b9b3` | Decorative ruled lines inside the report block only | decoration |
 | Note | `#55554f` | Secondary text | 7.5:1 on Paper, 6.46:1 on Desk |
-| Marker | `#ebc34d` | The logo's yellow: primary button fill (Ink text) and the "Next step" field | Ink on Marker 12.45:1 |
+| Marker | `#ebc34d` | The logo's yellow: primary button fill (Ink text) and the "Next step" bar | Ink on Marker 12.45:1 |
 | Error | `#b42318` | Form error text and borders | 6.57:1 on Paper |
 
-Marker is never used for text and never on Desk as a text background (1.45:1). It appears in at most two places per screen: the primary button and the "Next step" field.
+Marker is never used for text and never on Desk as a text background (1.45:1). It appears in at most two places per screen: the primary button and the "Next step" bar.
 
 **Type.** One family, Archivo (variable axes `wdth` 62-125 and `wght` 100-900), from the Fontsource package `@fontsource-variable/archivo`: use its `wdth.css`, which covers both axes, and serve the WOFF2 files from the site's own folder; never link to `fonts.googleapis.com`, which sends every visitor's IP address to Google. If you cannot download the files, use the fallback stack below. Headlines: `wdth` 112, `wght` 700, line height 1.1. Body: `wdth` 100, `wght` 400, line height 1.5. Field labels in the report block and form labels: `wdth` 75, `wght` 500, sentence case. Fallback stack: `system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif`.
 
@@ -74,7 +74,7 @@ Type scale (px), phone / desktop: H1 36 / 52; H2 28 / 36; H3 22 / 26; body 17 / 
 
 **Layout principles.**
 
-- One left-aligned text column, at most 680 px wide (about 70 characters), sharing its left edge with the logo on every page. 20 px side margins on phones, 40 px on tablets, a centred 1200 px frame on desktop.
+- One left-aligned text column, at most 620 px wide (about 70 characters of 18 px Archivo; 680 px holds 77 to 78), sharing its left edge with the logo on every page. 20 px side margins on phones, 40 px on tablets, a centred 1200 px frame on desktop.
 - Content that belongs together sits on a white sheet on the Desk background; sheets have a 2 px radius and no shadow, or a 1 px Ruling outline. Space between sheets: 48 px on phones, 80 px on desktop. Inside a sheet: 24 px.
 - Ruled lines appear only in the report block, forms and ruled lists. Everything else is separated by space.
 - All text is left-aligned. The only centred element allowed is the closing call-to-action block.
@@ -117,7 +117,7 @@ First screen at 390 px and 1440 px:
 
 **Imagery.** No photographs at launch and never stock photographs. Own photos, when supplied, appear as "attachments" to a sheet with a one-line caption set like a field. No icons in the services list.
 
-**Motion.** At most one: the Marker fill draws in under "Next step" on first load (300 ms, once, off under `prefers-reduced-motion`).
+**Motion.** At most one: the Marker bar beside "Next step" draws in on first load (300 ms, once, off under `prefers-reduced-motion`).
 
 **Do not drift into:** a newspaper or spreadsheet look, a beige "warm paper" look, or a form the visitor thinks they must fill in.
 
@@ -138,7 +138,7 @@ Marking used below: plain text in quotes is the business's existing copy, use it
 ### Home
 
 1. **Header.** Wordmark left; on desktop the links Services, Sectors, About, Contact, the language switch "DE | EN", and a small primary button "Book a call" `[[draft]]`. On phones: wordmark, then the menu button (44 x 44 px); the language switch lives inside the phone menu.
-2. **First screen.** H1 "Find the process that costs you time, and fix it with the tools you already have." `[[draft]]` (German: "Finden Sie den Ablauf, der Sie Zeit kostet, und lösen Sie ihn mit den Werkzeugen, die Sie schon haben." `[[draft, native review]]`). Supporting line: "Analysis, automation, and custom software for industrial and construction companies. Based in Winterthur, working across Switzerland." (adapted from "We offer analysis, automation, and custom software for industrial and construction companies. Based in Winterthur, working across Switzerland."). Then the work-report block with the primary button "Book a free 30-minute call" (German: "Kostenloses 30-Minuten-Gespräch buchen" `[[draft, native review]]`). Secondary text link: "Send a message" `[[draft]]`. Purpose: say what, for whom and where, and offer the next step.
+2. **First screen.** H1 "Find the process that costs you time, and fix it with the tools you already have." `[[draft]]` (German: "Finden Sie den Ablauf, der Sie Zeit kostet, und lösen Sie ihn mit Ihren eigenen Werkzeugen." `[[draft, native review]]`). Supporting line: "Analysis, automation, and custom software for industrial and construction companies. Based in Winterthur, working across Switzerland." (adapted from "We offer analysis, automation, and custom software for industrial and construction companies. Based in Winterthur, working across Switzerland."). Then the work-report block with the primary button "Book a free 30-minute call" (German: "Kostenloses 30-Minuten-Gespräch buchen" `[[draft, native review]]`). Secondary text link: "Send a message" `[[draft]]`. Purpose: say what, for whom and where, and offer the next step.
 3. **The problem.** H2 "Start with your processes." Text: "Most inefficiency isn't a software problem. It's the recurring and repetitive tasks piling up in the background." Purpose: name the visitor's real pain.
 4. **How it works.** H2 "How a project starts" `[[draft]]`. A numbered, ruled list of four steps (a real sequence): 1 Map ("We start by tracking the root of the problem."), 2 Propose ("Then we propose how to solve it. Often the solution is smaller, faster, and cheaper than you expected."), 3 Build ("The people who map your process are the people who build the fix."), 4 Teach ("Then we teach them to run it."). Purpose: make the engagement feel small and safe.
 5. **Services.** H2 "What we offer". A ruled list of the five services, each with its name, one line, and a link "More" `[[draft]]` to its page:
@@ -166,7 +166,7 @@ Marking used below: plain text in quotes is the business's existing copy, use it
 ### Contact
 
 1. **First screen.** H1 "Let's talk about the process that annoys you most". Text: "There are two easy ways to start, and neither costs you anything." Two sheets, side by side on desktop, stacked on phones with the booking sheet first.
-2. **Book a call (sheet).** H2 "Book a call". Text: "Half an hour is usually enough for us to tell you whether there's something worth doing, roughly what it would involve, and whether we're the right people for it. No preparation needed." Primary button "Book a free 30-minute call", opening the Microsoft Bookings free-consultation page in a new tab, with "(opens Microsoft Bookings)" `[[draft]]` in Note color under it. `[[supply: direct link to the free consultation service]]`. No embedded calendar frame.
+2. **Book a call (sheet).** H2 "Book a call". Text: "Half an hour is usually enough for us to tell you whether there's something worth doing, roughly what it would involve, and whether we're the right people for it. No preparation needed." Primary button "Book a free 30-minute call", opening Microsoft Bookings in a new tab (the booking page in section 2 until the direct link to the free consultation is supplied), with "(opens Microsoft Bookings)" `[[draft]]` in Note color under it. `[[supply: direct link to the free consultation service]]`. No embedded calendar frame.
 3. **Write to us (sheet).** H2 "Write to us". Text: "Prefer to type a few sentences first and see who answers? That works too. Tell us roughly what's going on and we'll come back to you with a real answer, not a brochure." Form: Name (required), E-mail (required), Company (optional), Message (required, up to 2,000 characters with a counter). Required fields marked "required" `[[draft]]` in the label. Button "Send message" `[[draft]]` in the primary style. Under the form: "We reply within `[[supply: reply time]]`." `[[draft]]` and a link to the privacy page.
 4. **Address sheet.** ketztek GmbH, Schulergasse 9, 8406 Winterthur; `info@ketztek.ch`; `[[supply: phone and hours]]`.
 
@@ -174,11 +174,11 @@ Marking used below: plain text in quotes is the business's existing copy, use it
 
 - **Phone menu.** Full-screen Paper sheet: 22 px links in 56 px rows, current page in bold with a 4 px Marker bar, the language switch, the primary button at the bottom. Open and close buttons 44 x 44 px, nothing on top of them; Escape closes it; focus moves into it.
 - **Desktop navigation.** Current page: Ink text with a 2 px Ink underline. Hover: 2 px underline. Focus: 2 px Ink outline, 2 px offset.
-- **Primary button.** Marker fill, Ink text, Archivo 600, 17 px, 48 px tall, 4 px radius, no shadow. Hover: Ink fill, Marker text (12.45:1). Focus: 2 px Ink outline, 2 px offset. Disabled: Desk fill, Note text.
+- **Primary button.** Marker fill, Ink text, Archivo 600, 17 px, 48 px tall, 4 px radius, no shadow. Hover: Ink fill, Paper text (21:1). Focus: 2 px Ink outline, 2 px offset. Disabled: Desk fill, Note text.
 - **Secondary action.** A text link with a 1 px underline (2 px on hover), never a second filled button next to the primary.
 - **Links in text.** Ink, underlined.
 - **Ruled list.** Rows with a 1 px Ruling line above and 16 px padding; the label left of the text on desktop, above it on phones.
-- **Work-report block.** White sheet, title "Work report" `[[draft]]` in the field-label style, three rows on 1 px Ruling lines, "Next step" row with a Marker band behind the button area.
+- **Work-report block.** White sheet, title "Work report" `[[draft]]` in the field-label style, three rows on 1 px Ruling lines, "Next step" row marked by a 4 px Marker bar on its left edge. The row itself stays Paper: a Marker band behind the Marker button would hide the button.
 - **Form fields.** 48 px tall, 1 px Field line border, 4 px radius, full width of the sheet (`width: 100%`, `box-sizing: border-box`), labels above. Focus: 2 px Ink border. Error: 2 px Error border, an error message under the field in Error color starting with what to do ("Enter an email address like <name@company.ch>" `[[draft]]`). Success: the form is replaced by a confirmation sheet "Thanks. We'll reply within `[[supply: reply time]]`." `[[draft]]`.
 - **Footer.** Paper background with a 1 px Ruling line above. Address and email; links to Book a call, Contact, Impressum, Privacy; language switch. Every link at least 44 px tall.
 - **404 page.** H1 "This page doesn't exist" `[[draft]]`, one line, and two links: Home and "Book a free 30-minute call".
@@ -239,7 +239,7 @@ Marking used below: plain text in quotes is the business's existing copy, use it
 12. Only the palette in section 5 is used; there is no purple, blue, teal or green.
 13. No stock photograph, device mock-up, gradient or card-with-shadow appears.
 14. The work-report block appears once per page and contains exactly one interactive element, the primary button.
-15. With the German drafts swapped in, no heading or button breaks its layout.
+15. With the German drafts swapped in, no heading or button breaks its layout, and at 390 x 844 the German Home H1 and button are still on the first screen. Judge first-screen checks with the draft and supply notes hidden.
 16. Under `prefers-reduced-motion: reduce`, nothing animates.
 17. Every `[[draft]]` and `[[supply: ...]]` marker from this prompt is visible on the page or listed in the note.
 
@@ -272,7 +272,7 @@ Marking used below: plain text in quotes is the business's existing copy, use it
 
 1. Phone number and office hours, if public.
 2. Reply time for messages.
-3. Direct link to the free-consultation service in Microsoft Bookings.
+3. Direct link to the free-consultation service in Microsoft Bookings (until then, the booking page in section 2).
 4. SVG or PDF logo; confirmation of the official yellow.
 5. Team by role, with photos if they may be shown.
 6. Two or three case stories (one for automation), anonymised if needed, with results.
@@ -296,6 +296,6 @@ Marking used below: plain text in quotes is the business's existing copy, use it
 
 Design a new website for ketztek GmbH, a small Winterthur firm that finds where industrial and construction companies lose time to manual processes and fixes them with Microsoft 365, the Power Platform or custom software, sized honestly. Visitors are plant, site and operations managers, often on phones; they must see the offer and a "Book a free 30-minute call" button on the first screen. Pages: Home, the service page "Automation & Digital Workflows", Contact, phone menu, footer; 390 to 1440 px.
 
-Direction "Rapport": the site reads like a well-kept work report. White sheets (`#ffffff`) on a neutral grey page (`#eeeeeb`), Ink `#000000` text, the logo's yellow `#ebc34d` only as the primary button fill (with black text) and one "Next step" field. Type: Archivo (self-hosted WOFF2 from `@fontsource-variable/archivo`), wide and bold for headlines, normal for body (17 px minimum on phones), narrow for labels. Signature: a "Work report" block on the first screen with ruled fields "Process / Today / Next step", the last holding the real booking button. Everything left-aligned, ruled lists instead of cards.
+Direction "Rapport": the site reads like a well-kept work report. White sheets (`#ffffff`) on a neutral grey page (`#eeeeeb`), Ink `#000000` text, the logo's yellow `#ebc34d` only as the primary button fill (with black text) and one "Next step" bar. Type: Archivo (self-hosted WOFF2 from `@fontsource-variable/archivo`), wide and bold for headlines, normal for body (17 px minimum on phones), narrow for labels. Signature: a "Work report" block on the first screen with ruled fields "Process / Today / Next step", the last holding the real booking button. Everything left-aligned, ruled lists instead of cards.
 
 Do not: use stock photos, gradients, mock-ups or cards with shadows; add blue, teal, green or purple; put anything over the phone menu button; show the logo twice; invent clients, numbers or claims (use `[[supply: ...]]` placeholders).
