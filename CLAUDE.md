@@ -18,10 +18,23 @@ Audit and design research for ketztek GmbH, a consultancy in Winterthur, Switzer
 - Do not commit `.playwright-mcp/` or `scratch/`; both are git-ignored and should stay that way.
 - Before renaming or moving a file, search the repo for links to it (README, spec, reports) and update them.
 
+## Gotchas
+
+- The demo's `CLAUDE.md` cites `internal/research/design-brief/ketztek-design-prompt.md` by path. Renaming or moving that file breaks the reference there.
+
+## Commands
+
+There is no build, test or dependency setup. The only tool is markdownlint, which `npx` fetches on first run (this needs network access):
+
+```bash
+npx --yes markdownlint-cli2 --fix "<path>.md"   # auto-fix
+npx --yes markdownlint-cli2 "<path>.md"         # check; must report 0 issues
+```
+
 ## Markdown
 
 - Follow the markdownlint rules in the workspace guidance. `.markdownlint.json` turns off MD013 (line length) and sets MD024 to `siblings_only`.
-- Lint every `.md` file you write with `npx --yes markdownlint-cli2 --fix "<path>"`, then again without `--fix`. Fix what is left by hand.
+- Lint every `.md` file you write with the commands above: fix first, then check.
 - Use `[text](url)` or `<url>` for links; never a bare URL.
 
 ## Git
