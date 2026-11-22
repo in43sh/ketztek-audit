@@ -22,10 +22,10 @@ FIRST SCREEN (visible without scrolling at 390 x 844 and at 1440 x 900)
 - Supporting line: "Analysis, automation, and custom software for industrial and construction companies. Based in Winterthur, working across Switzerland."
 - Primary button: "Book a free 30-minute call". It is the strongest action on the screen.
 - Secondary text link: "Send a message".
-- Logo: a labelled placeholder box the size of the wordmark, reading "ketztek wordmark: black letters, yellow double z". Show it once.
+- Logo: a labelled placeholder box the size of the wordmark, reading "ketztek wordmark: black letters, yellow double z". Show it once, in the header only. Do not repeat it in the hero.
 
 BRAND
-Keep only the brand colours: black #000000 and yellow #ebc34d. Use yellow for the primary button and at most one more accent. Do not use blue, teal, green or purple, and no gradients.
+Use black #000000 and yellow #ebc34d as the core palette. Yellow is for the primary button and the logo. You may add one further accent that is not blue, teal, green or purple. No gradients.
 
 CONTENT (use verbatim, in this order)
 1. Problem: "Most inefficiency isn't a software problem. It's the recurring and repetitive tasks piling up in the background."
@@ -36,7 +36,7 @@ CONTENT (use verbatim, in this order)
 6. Closing: "Not sure where to start?" ("Most of our projects begin with one frustrating process. Tell us about yours. In half an hour, we'll give you an honest opinion on whether it's worth fixing and roughly what it would take, before any invoice exists."), the button "Book a free 30-minute call", and the text link "Send a message".
 
 HEADER, MENU AND FOOTER
-- Header: the logo placeholder on the left; links Services, Sectors, About, Contact; the language switch "DE | EN"; the button "Book a call". On phones: the logo and a menu button of at least 44 x 44 px with nothing on top of it. The menu opens full-screen with the same links, the language switch and the primary button.
+- Header: the logo placeholder on the left; links Services, Sectors, About, Contact; the language switch "DE | EN"; the button "Book a call", styled as a secondary, outlined button so the hero button stays the strongest action. On phones: the logo and a menu button of at least 44 x 44 px with nothing on top of it. The menu opens full-screen with the same links, the language switch and the primary button.
 - Footer: ketztek GmbH, Schulergasse 9, 8406 Winterthur, Switzerland; info@ketztek.ch; links to "Book a call", "Contact", "Impressum" and "Privacy"; the language switch.
 
 VISUAL RULES
