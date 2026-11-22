@@ -1,5 +1,7 @@
 # Stitch prompt: ketztek homepage, three creative directions
 
+> Replaced by [the blank-page Stitch prompt](ketztek-stitch-prompt-fresh.md). This prompt produced six concepts that stayed too close to the earlier designs. It is kept as a record; do not run it again.
+
 Date: 2026-11-21. Paste the prompt block into Stitch. The prompt gives goals, facts and hard limits. It leaves layout, grid, navigation, typography and visual language to Stitch, so the three concepts can differ from one another and from our earlier designs. It keeps the requirements from the [visual research](ketztek-visual-research.md) and the [design v2 prompt](ketztek-design-v2-prompt.md).
 
 Before running it, check the logo. Stitch cannot draw the wordmark from a file, so the prompt asks for a labelled placeholder. Replace it with the real SVG later. Option B is still a proposal, so use the current wordmark if ketztek has not approved B.

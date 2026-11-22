@@ -27,6 +27,13 @@ Each direction gets its own Stitch project and runs in three short steps. Each s
 
 Then compare the projects with the [checklist](#checklist-for-comparing-the-results).
 
+If a step goes wrong:
+
+- **Step 2 changes the layout.** Forum users report that Stitch can break a working layout when content is added. Paste the copy one section at a time, or generate the filled page as a new screen and keep the step 1 screen.
+- **Step 1 returns only the desktop page.** Select the desktop screen and ask: "Make the 390 px phone version of this screen."
+
+Test with direction A or C first. They differ most from the earlier designs.
+
 ## Step 1: direction blocks
 
 Paste exactly one, then the core brief.

@@ -208,7 +208,8 @@ Built and pushed:
 - Drawing sheet: branch `design/option-e` in `ketztek-demo`, last commit `ecb0e01`. Home, Automation, Contact (form and error state), phone menu and 404 checked at 390 and 1440 px in the clean view.
 - Measured: branch `design/option-e-measured`, last commit `0c896a9`. Chosen after the drawing sheet was judged too close to Rapport. Home only.
 - Demo `main`: one site with three options. The root is a chooser, Rapport is in `rapport/`, and the other two are in `drawing-sheet/` and `measured/` (commit `d908199`). Live at <https://ketztek-demo.vercel.app>. The README has the details.
-- Audit `main`: the research, this spec and the Stitch prompt are merged (commit `cd0ac84`). The current Stitch prompt is `ketztek-stitch-prompt.md` in this folder.
+- Audit `main`: the research, this spec and the Stitch prompts are merged. The current Stitch prompt is [ketztek-stitch-prompt-fresh.md](ketztek-stitch-prompt-fresh.md), a blank-page prompt run in three short steps, one Stitch project per direction. The earlier [ketztek-stitch-prompt.md](ketztek-stitch-prompt.md) is kept as a record.
+- Stitch runs of the earlier prompt: two projects, [16108515790009295993](https://stitch.withgoogle.com/projects/16108515790009295993) (Swiss Industrial Grid, Editorial Monograph, High-Contrast Workshop) and [11326724157622006227](https://stitch.withgoogle.com/projects/11326724157622006227) (Shift Handover Board, Technical Calibration Sheet, Plant Floor Plan). All six were judged too close to the earlier designs. The fresh prompt explains why and was written to replace it.
 
 Not done:
 
@@ -218,6 +219,7 @@ Not done:
 - The drawing sheet's accessibility (5) and finished-without-photos (4) scores are predictions, not measurements.
 - Only Home was reviewed for the measured option. The service pages, About, Impressum, Privacy and German Home were not reviewed for any option.
 - The German copy is a draft, and only the headline and button have German text.
+- The fresh Stitch prompt has not been run yet.
 - Nothing has been shared with ketztek.
 
 Deployment:
